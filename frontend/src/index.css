@@ -1,0 +1,348 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* App container */
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.app h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+.spinner-small {
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+}
+
+.spinner-medium {
+    width: 40px;
+    height: 40px;
+    border-width: 4px;
+}
+
+.spinner-large {
+    width: 60px;
+    height: 60px;
+    border-width: 6px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-message {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Error Message */
+.error-message-container {
+    margin-bottom: 20px;
+}
+
+.error {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #c62828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-text {
+    flex: 1;
+}
+
+.error-dismiss {
+    background: none;
+    border: none;
+    color: #c62828;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 5px;
+    margin-left: 10px;
+}
+
+.error-dismiss:hover {
+    color: #a00000;
+}
+
+/* Form Error Messages */
+.error-message {
+    color: #c62828;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.form-input.error {
+    border-color: #c62828;
+    background-color: #fff5f5;
+}
+
+/* Translation Form */
+.translation-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.translation-form h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.btn-submit {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background-color: #2980b9;
+}
+
+.btn-submit:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Translation List */
+.translation-list {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.translation-list h2 {
+    padding: 20px 30px;
+    margin: 0;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    color: #2c3e50;
+}
+
+.no-translations {
+    padding: 50px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* Table styles */
+.translations-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.translations-table th {
+    background-color: #f8f9fa;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #2c3e50;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.translations-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: top;
+}
+
+.translations-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.source-text {
+    font-weight: 500;
+    color: #2c3e50;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.target-text {
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.has-translation {
+    color: #27ae60;
+}
+
+.no-translation {
+    color: #e74c3c;
+    font-style: italic;
+}
+
+.edit-input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Action buttons */
+.actions {
+    white-space: nowrap;
+}
+
+.actions button {
+    margin-right: 8px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #f39c12;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #e67e22;
+}
+
+.btn-save {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-save:hover {
+    background-color: #229954;
+}
+
+.btn-cancel {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #7f8c8d;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .app {
+        padding: 10px;
+    }
+    
+    .app h1 {
+        font-size: 2rem;
+    }
+    
+    .translation-form,
+    .translation-list {
+        padding: 20px;
+    }
+    
+    .translations-table {
+        font-size: 0.9rem;
+    }
+    
+    .translations-table th,
+    .translations-table td {
+        padding: 10px;
+    }
+    
+    .source-text,
+    .target-text {
+        max-width: 200px;
+    }
+    
+    .actions button {
+        margin-bottom: 5px;
+        display: block;
+        width: 100%;
+    }
+} 

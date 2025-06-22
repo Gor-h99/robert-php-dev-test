@@ -1,0 +1,103 @@
+[
+    {
+        "id": "6857b87d6b982",
+        "source": "Hello world",
+        "target": "Bonjour le monde",
+        "history": []
+    },
+    {
+        "id": "6857b87d6ba09",
+        "source": "Good morning",
+        "target": "Bonjour",
+        "history": []
+    },
+    {
+        "id": "6857b87d6ba63",
+        "source": "How are you?",
+        "target": "Comment allez-vous?",
+        "history": []
+    },
+    {
+        "id": "6857b87d6bb40",
+        "source": "Thank you",
+        "target": "Merci",
+        "history": []
+    },
+    {
+        "id": "6857b87d6bb8b",
+        "source": "You're welcome",
+        "target": "De rien",
+        "history": []
+    },
+    {
+        "id": "6857b87d6bbcf",
+        "source": "Goodbye",
+        "target": "Au revoir",
+        "history": []
+    },
+    {
+        "id": "6857b87d6bc0f",
+        "source": "Please",
+        "target": "S'il vous pla\u00eet",
+        "history": []
+    },
+    {
+        "id": "6857b87d6bce8",
+        "source": "Excuse me",
+        "target": "Excusez-moi",
+        "history": []
+    },
+    {
+        "id": "6857b87d6bd39",
+        "source": "I don't understand",
+        "target": "Je ne comprends pas",
+        "history": []
+    },
+    {
+        "id": "6857b87d6bd80",
+        "source": "Can you help me?",
+        "target": "Pouvez-vous m'aider?",
+        "history": []
+    },
+    {
+        "id": "6857b87d6bdc0",
+        "source": "What time is it?",
+        "target": "Quelle heure est-il?",
+        "history": []
+    },
+    {
+        "id": "6857b87d6be01",
+        "source": "Where is the bathroom?",
+        "target": "O\u00f9 sont les toilettes?",
+        "history": []
+    },
+    {
+        "id": "6857b87d6be42",
+        "source": "How much does this cost?",
+        "target": "Combien \u00e7a co\u00fbte?",
+        "history": []
+    },
+    {
+        "id": "6857b87d6be9a",
+        "source": "I love you",
+        "target": "Je t'aime",
+        "history": []
+    },
+    {
+        "id": "6857b87d6bef6",
+        "source": "Have a nice day",
+        "target": "Bonne journ\u00e9e",
+        "history": []
+    },
+    {
+        "id": "6857b89a4f4ec",
+        "source": "Test source",
+        "target": "Updated target",
+        "history": [
+            {
+                "target": "Test target",
+                "date": "2025-06-22 08:02:34"
+            }
+        ]
+    }
+]
