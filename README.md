@@ -7,6 +7,53 @@ Robert is an innovative Computer-Assisted Translation (CAT) tool crafted to stre
 ### What are the units of translation?
 In the field of translation, a translation unit is a segment of a text which the translator treats as a single cognitive unit for the purposes of establishing an equivalence. It may be a single word, a phrase, one or more sentences, or even a larger unit.
 
+## Prerequisites
+- PHP 8.0 or higher
+- Composer (for dependency management)
+- Node.js and npm (for React frontend)
+
+## Installation
+
+### 1. Clone the repository
+```bash
+git clone <repository-url>
+cd robert-php-dev-test
+```
+
+### 2. Install PHP dependencies
+```bash
+composer install
+```
+
+### 3. Install frontend dependencies
+```bash
+cd frontend
+npm install
+cd ..
+```
+
+### 4. Set up the application
+```bash
+php setup.php
+```
+
+### 5. Start the development server
+```bash
+php -S localhost:8000
+```
+
+### 6. Start the React development server (in a new terminal)
+```bash
+cd frontend
+npm run dev
+```
+
+## Quick Start
+1. Run `php setup.php` to initialize the database with sample data
+2. Start the PHP server: `php -S localhost:8000`
+3. Start the React frontend: `cd frontend && npm run dev`
+4. Open your browser to `http://localhost:8000` for the API and `http://localhost:5173` for the React frontend
+
 ## Instructions:
 1. Fork this repository to your own GitHub account.
 2. Create a new branch with your name for making changes.
